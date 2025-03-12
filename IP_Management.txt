@@ -1,0 +1,99 @@
+IP Management
+-------------------------------
+===============================
+
+Block 172.168.0.1/30 || IIG Core To Primary Upstream
+IIG Core Router 1 Loopback 10.10.10.1/32
+Subnet Mask 255.255.255.255
+IIG Core Router 1 end 172.168.0.1
+Secondary Upstream end 172.168.0.2
+Gateway 172.168.0.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.1.1/30 || IIG to Secondary Upstream
+IIG Core Router 1 end 172.168.1.1
+Secondary Upstream end 172.168.1.2
+Gateway 172.168.1.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.2.1/30 || IIG to ISP Core
+IIG Core Router 1 end 172.168.2.1
+ISP Core end 172.168.2.2
+Gateway 172.168.2.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.3.1/30 || ISP Core to Primary POP
+ISP Core Loopback 10.10.10.2/32
+Subnet Mask 255.255.255.255
+ISP Core end 172.168.3.1
+Primary POP end 172.168.3.2
+Gateway 172.168.3.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.4.1/30 || Primary POP to POP2
+Primary POP POP Loopback 10.10.10.3/32
+Subnet Mask 255.255.255.255
+POP2 Loopback 10.10.10.4/32
+Subnet Mask 255.255.255.255
+Primary POP end 172.168.4.1
+POP2 end 172.168.4.2 
+Gateway 172.168.4.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.5.1/30 || Banani to Novoair Banani CPE
+Novoair Banani CPE Loopback 10.10.10.5/32
+Subnet Mask 255.255.255.255
+Novoair Banani CPE Primary end 172.168.5.2
+Banani end 172.168.5.1
+Gateway 172.168.5.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.6.1/30 || Customer "A" CE extension to POP1
+POP 1 Loopback 10.10.10.6/32
+Customer "A" CE extension Secondary end 172.168.6.1
+POP1 end 172.168.6.2
+Gateway 172.168.6.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.7.1/30 || Customer "A" Extension to POP3
+POP3 Loopback 10.10.10.7/32
+Customer "A" Extension Primary end 172.168.7.1
+POP3 end 172.168.7.2
+Gateway 172.168.7.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.8.1/30 || Customer "A" Extension to POP5
+Mascot POP Loopback 10.10.10.8/32
+Customer "A" Extension Loopback 10.10.10.9/32
+Customer "A" Extension Secondary end 172.168.8.1
+POP5 end 172.168.8.2
+Gateway 172.168.8.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.9.1/30 || POP3 to Primary POP
+POP3 end 172.168.9.1
+Primary POP end 172.168.9.2
+Gateway 172.168.9.0
+Subnet Mask 255.255.255.252
+
+Block 172.168.10.1/30 || ISP Core to POP 1 via Switch
+ISP Core end 172.168.10.1
+POP1 end 172.168.10.2
+Gateway 172.168.10.0
+Subnet Mask 255.255.255.252
+
+================================================================
+
+Block 192.168.10.1/30 || CusTomer "A" CE extension to Customer "A" CE
+CusTomer "A" CE extension CPE end 192.168.10.1
+Customer "A" CE end 192.168.10.2
+Gateway 192.168.10.0
+Subnet Mask 255.255.255.252
+
+
+
+
+
+
+
+
